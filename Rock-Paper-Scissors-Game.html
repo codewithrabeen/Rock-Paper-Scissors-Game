@@ -1,99 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Calculator</title>
-   <link rel="stylesheet" href="Scripts/Styles/Rock-Paper-Scissors-Game.css">
+    <title>ROCK PAPER SCISSORS</title>
+
+   <link rel="stylesheet" href="Scripts/Styles/Rock-Paper-Scissors-game.css">
   </head>
   <body>
 
-     <p class="js-result calculation lines"></p>
-    <p class="lines">
-      <button class="calculator-button gray-button" onclick="
-        updateCalculation('1');
-      ">1</button>
+     <p>ROCK PAPER SCISSORS GAME</p> 
+     <p>Lets play the game:</p>         
+    <button  class="move-button js-rock-button"><img src="images/rock-emoji.png" class="button-icon"></button>
 
-      <button class="calculator-button gray-button" onclick="
-        updateCalculation('2');
-      ">2</button>
+    <button  class="move-button js-Paper-button"><img src="images/paper-emoji.png" class="button-icon"></button> 
 
-      <button class="calculator-button gray-button" onclick="
-        updateCalculation('3');
-      ">3</button>
+    <button class="move-button js-Scissors-button"><img src="images/scissors-emoji.png" class="button-icon"></button> 
 
-      <button class="calculator-button orange-button" onclick="
-        updateCalculation(' + ');
-      ">+</button>
+    <p class="js-result result" ></p>
+    <p class="js-moves"> 
+     
     </p>
+    
+    <p class="js-score score"></p>
+    
+    <button onclick="
+    score.player = 0;
+    score.computer = 0;
+    score.ties = 0;
 
-    <p class="lines">
-      <button class="calculator-button gray-button" onclick="
-        updateCalculation('4');
-      ">4</button>
+    localStorage.removeItem('score');
+    updateScore();
+    
+    " class="reset-score-button"> Reset score</button>
+    
+    <button class="js-auto-play-button auto-play-button" ondblclick="
+    autoPlay();
+    document.querySelector('.js-auto-play-message').innerHTML;
+    
+    ">Auto Play</button>
+    <p class="js-auto-play-message">Press double click to play</p>
+    
 
-      <button class="calculator-button gray-button" onclick="
-        updateCalculation('5');
-      ">5</button>
+    <script src="Scripts/Rock-Paper-Scissors-game.js"></script>
 
-      <button class="calculator-button gray-button" onclick="
-        updateCalculation('6');
-      ">6</button>
-
-      <button class="calculator-button orange-button" onclick="
-        updateCalculation(' - ');
-      ">-</button>
-    </p>
-
-    <p class="lines">
-      <button class="calculator-button gray-button" onclick="
-        updateCalculation('7');
-      ">7</button>
-
-      <button class="calculator-button gray-button" onclick="
-        updateCalculation('8');
-      ">8</button>
-
-      <button class="calculator-button gray-button" onclick="
-        updateCalculation('9');
-      ">9</button>
-
-      <button class="calculator-button orange-button" onclick="
-        updateCalculation(' * ');
-      ">*</button>
-    </p>
-
-    <p class="lines">
-      <button class="calculator-button gray-button" onclick="
-        updateCalculation('0');
-      ">0</button>
-
-      <button class="calculator-button gray-button" onclick="
-        updateCalculation('.');
-      ">.</button>
-
-      <button class="calculator-button gray-button equal" onclick="
-
-        calculation = eval(calculation);
-        displayCalculation();
-
-        localStorage.setItem('calculation', calculation);
-      ">=</button>
-
-      <button class="calculator-button orange-button" onclick="
-        updateCalculation(' / ');
-      ">/</button>
-    </p>
-
-    <p class="lines">
-      <button class=" gray-button clear-button" onclick="
-        calculation = '';
-        displayCalculation();
-
-        localStorage.setItem('calculation', calculation);
-      ">AC</button>
-    </p>
-
-      
-
-    <script src="Scripts/Rock-Paper-Scissors-Game.js"> </script>
   </body>
-</html>
+</html> 
+  
+    
+      
