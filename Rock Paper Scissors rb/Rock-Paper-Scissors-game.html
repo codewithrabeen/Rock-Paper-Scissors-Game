@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ROCK PAPER SCISSORS</title>
+
+   <link rel="stylesheet" href="Rock-Paper-Scissors-game.css">
+  </head>
+  <body>
+  <div style="text-align:center; margin-bottom: 24px;"></div>
+    <h1 style="font-family: 'Segoe UI', Arial, sans-serif; font-size: 1.5em; color: #4A90E2;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); margin-top: 20px; margin-bottom: 20px;margin-left: 100px;">
+      ✊ ROCK ✋ PAPER ✌️ SCISSORS
+    </h1>
+    <p style="font-size: 1.2em; color: #b3ad77; margin-bottom: 50px;
+    margin-left: 50px;">
+      Ready to challenge the computer? <span style="color:#4A90E2;">Pick your move!</span>
+    </p>
+  </div>
+    <button style="margin-left: 100px;" class="move-button js-rock-button"><img src="images/rock-emoji.png" class="button-icon"></button>
+
+    <button  class="move-button js-Paper-button"><img src="images/paper-emoji.png" class="button-icon"></button> 
+
+    <button 
+    class="move-button js-Scissors-button"><img src="images/scissors-emoji.png" class="button-icon"></button> 
+
+    <p style="margin-left: 100px;" class="js-result result" ></p>
+    <p style="margin-left: 100px;" 
+    class="js-moves"></p>
+
+    <p style="margin-left: 100px;"
+     class="js-reset-confirmation"></p>
+    
+    
+    <p style="margin-left: 50px;"
+    class="js-score score"></p>
+    
+    <button class="reset-score-button js-reset-score-button"> Reset score</button>
+    
+    <button class="js-auto-play-button auto-play-button
+    ">Auto Play</button>
+
+    <p style="margin-left: 50px;"
+    class="instructions">
+      <strong>Instructions:</strong><br>
+      (Optional) Double-click the "Auto Play" button or press <strong>a</strong> to start auto play.<br>
+      (Optional) Press <strong>r</strong> for Rock, <strong>p</strong> for Paper, <strong>s</strong> for Scissors.<br>
+      (Optional) Press <strong>Esc</strong> to reset the score.
+    </p>
+
+    
+
+    <script src="Rock-Paper-Scissors-game.js"></script>
+
+  </body>
+</html> 
