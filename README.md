@@ -12,3 +12,6 @@ Features:-
 * Instant result display for each round.
 
 * Simple, responsive, and beginner-friendly design.
+
+# Screenshot
+<img width="1068" height="761" alt="image" src="https://github.com/user-attachments/assets/c9def867-b49d-45de-a586-52f493fbc9a3" />
